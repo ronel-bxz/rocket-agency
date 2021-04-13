@@ -1,0 +1,227 @@
+/*
+Theme Name: TFE exam theme
+Author: Ronel D dela Victoria
+License: GNU General Public License v2 or later
+*/
+body {
+  font-family: "Work Sans";
+}
+
+body p {
+  padding: 0;
+  margin: 0;
+}
+
+body ul {
+  padding: 0;
+  list-style-type: none;
+  margin-top: revert;
+}
+
+body button {
+  border-radius: 30px;
+  width: 230px;
+  max-width: 100%;
+  font-family: roboto;
+  height: 70px;
+}
+
+body button {
+  border: none;
+  outline: none;
+}
+
+body button:focus {
+  outline: none;
+}
+
+body a:hover {
+  text-decoration: none;
+  color: #003878;
+}
+
+body .alignwide {
+  max-width: 1458px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body .container {
+  max-width: 1458px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body .alignfull {
+  padding: 0 15px;
+  max-width: 100vw;
+}
+
+body .wp-block-cover.has-background-dim:not([class*=-background-color]) {
+  background-color: transparent;
+}
+
+body header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header nav ul:first-child li:first-child {
+  padding-left: 0;
+}
+
+body header nav ul:first-child li {
+  padding: 0 30px;
+}
+
+body header nav ul {
+  display: inline-block;
+}
+
+body header nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+body header nav ul li a {
+  color: #0c0c0e;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+body header nav ul li a .primary {
+  background-color: #003878;
+  color: #fff;
+  font-family: "Roboto";
+}
+
+body header nav ul li a .secondary {
+  background-color: #f47820;
+  color: #fff;
+  font-family: "Roboto";
+}
+
+body .hero {
+  background-color: transparent !important;
+}
+
+body .hero h1 {
+  font-size: 80px;
+  font-weight: 300;
+  margin-bottom: 70px;
+}
+
+body .hero h1 span {
+  font-weight: 600;
+}
+
+body .expertise {
+  padding: 180px 0 175px 0;
+}
+
+body .expertise h2 {
+  font-weight: 300;
+  margin: 30px 0 50px 0;
+  font-size: 55px;
+}
+
+body .expertise h2 span {
+  font-weight: 600;
+}
+
+body .expertise .expertise-list {
+  margin-top: 32px;
+  margin-bottom: 35px;
+}
+
+body .why-lorem {
+  padding: 150px 0 260px 0;
+}
+
+body .why-lorem h2 {
+  font-weight: 300;
+  font-size: 60px;
+  color: #0c0c0e !important;
+  margin: 40px 0 50px 0;
+}
+
+body .why-lorem .reasons {
+  margin-top: 75px;
+}
+
+body .why-lorem .third-reason {
+  margin-top: 100px;
+}
+
+body .semibold {
+  font-weight: 600;
+  font-size: 22px;
+  color: #939393;
+}
+
+body #business-outcomes {
+  padding: 105px 0 195px 0;
+}
+
+body #business-outcomes figure {
+  height: 145px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #business-outcomes h4 {
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+body #business-outcomes h2 {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+body footer {
+  background-color: #003878;
+  color: #fff;
+  padding: 102px 0 95px 0;
+}
+
+body footer .primary {
+  background-color: #003878;
+  color: #fff;
+  font-family: "Roboto";
+  border: 1px solid #fff;
+  margin-right: 15px;
+}
+
+body footer .secondary {
+  background-color: #f47820;
+  color: #fff;
+  font-family: "Roboto";
+  margin-left: 15px;
+}
+
+body footer h2 {
+  font-size: 50px;
+}
+
+body footer p {
+  font-size: 28px;
+  margin-bottom: 32px;
+}
+
+body footer .bottom-footer {
+  margin-top: 90px;
+}
+/*# sourceMappingURL=style.css.map */
