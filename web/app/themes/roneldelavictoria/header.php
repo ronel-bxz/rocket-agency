@@ -24,7 +24,13 @@
                <header>
                   <div class="d-flex flex-column flex-md-column flex-md-column flex-lg-column flex-xl-row align-items-center">
                      <div class="logo mr-auto">
-                        <a href=""><img src="<?php echo get_template_directory_uri().'/images/logo.png' ?>" alt=""></a>
+                        <a href="">
+                           <?php
+                              $custom_logo_id = get_theme_mod( 'custom_logo' );
+                              $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+                           ?>
+                           <img src="<?php echo $image[0]; ?>" alt="">
+                        </a>
                      </div>
                      <div class="d-block d-sm-block d-md-block d-lg-block d-xl-none">
                         <a id="menu-button" href="javascript:void(0)"><img src="<?php echo get_template_directory_uri().'/images/menu.png' ?>" alt=""></a>

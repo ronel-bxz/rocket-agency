@@ -3,15 +3,16 @@ http://rocket-agency.local//wp/wp-login.php
 username:rocketagency
 password:mAMYiuD4Mf6B3FGAH0
 
-1.Clone https://github.com/ronel-bxz/rocket-ageny.git
-2.import the database in phpmyadmin and continue to step 3
+1.Clone https://github.com/ronel-bxz/rocket-agency.git
+2.import the database in phpmyadmin and go to wp_options table and check HOME and siteurl if it is correct.
+  database file rocket-agency.sql is in the root directory.
 3.Create a .env file then paste the all text from env.example
   and set the variable DB_NAME DB_USER DB_PASSWORD WP_HOME
-4.go to terminal and locate your file directory and run "composer install".
+4.go to terminal and locate your file directory and run "composer install" to install dependencies.
   the site is ready to go.
-5.got to your dashboard by adding to your domain name /wp/wp-login.php
+5.go to your dashboard by adding to your domain name /wp/wp-login.php
   login to this account:
   username:rocketagency
   password:mAMYiuD4Mf6B3FGAH0
 
-Note: you must use virtual host if you using it on localhost.
+Note: you must use virtual host if you are testing it on localhost.

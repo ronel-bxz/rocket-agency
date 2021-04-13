@@ -26,6 +26,7 @@ body button {
   max-width: 100%;
   font-family: roboto;
   height: 70px;
+  cursor: pointer;
 }
 
 body button {
@@ -116,12 +117,16 @@ body header nav ul li a .primary {
   background-color: #003878;
   color: #fff;
   font-family: "Roboto";
+  font-weight: 500;
+  font-size: 20px;
 }
 
 body header nav ul li a .secondary {
   background-color: #f47820;
   color: #fff;
   font-family: "Roboto";
+  font-weight: 500;
+  font-size: 20px;
 }
 
 body .hero {
@@ -187,7 +192,7 @@ body .semibold {
 }
 
 body #business-outcomes {
-  padding: 105px 0 195px 0;
+  padding: 105px 15px 195px 15px;
 }
 
 body #business-outcomes figure {
@@ -222,6 +227,8 @@ body footer .primary {
   font-family: "Roboto";
   border: 1px solid #fff;
   margin-right: 15px;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 body footer .secondary {
@@ -229,6 +236,8 @@ body footer .secondary {
   color: #fff;
   font-family: "Roboto";
   margin-left: 15px;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 body footer h2 {
@@ -268,6 +277,48 @@ body .show-nav {
   body #nav-collapse {
     display: none;
     width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  body .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  body .hero p font {
+    font-size: 22px;
+  }
+  body .expertise {
+    padding-top: 90px;
+    padding-bottom: 50px;
+  }
+  body #expertise h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  body #expertise .expertise-col {
+    margin-bottom: 40px;
+  }
+  body #why-lorem h2 {
+    font-size: 36px;
+  }
+  body #why-lorem .why-lorem-title {
+    -ms-flex-preferred-size: 100% !important;
+        flex-basis: 100% !important;
+  }
+  body #why-lorem .why-lorem-para {
+    -ms-flex-preferred-size: 100% !important;
+        flex-basis: 100% !important;
+  }
+  body #business-outcomes {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  body #business-outcomes h2 {
+    font-size: 36px !important;
+  }
+  body footer h2 {
+    font-size: 36px;
   }
 }
 /*# sourceMappingURL=style.css.map */
