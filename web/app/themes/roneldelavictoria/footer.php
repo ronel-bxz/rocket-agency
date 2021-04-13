@@ -20,5 +20,22 @@
         </div>
     </footer>
     <?php wp_footer(); ?>
+    <script>
+
+        jQuery(document).ready(function($){
+            $('#menu-button').click(function(){
+                $('#nav-collapse').show();
+                $('#nav-collapse').addClass('show-nav');
+                $('#menu-button').hide();
+                $('#menu-button-cancel').show();
+            })
+            $('#menu-button-cancel').click(function(){
+                $('#nav-collapse').hide();
+                $('#nav-collapse').removeClass('show-nav');
+                $('#menu-button').show();
+                $('#menu-button-cancel').hide();
+            })
+        })
+    </script>
    </body>
 </html>

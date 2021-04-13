@@ -13,22 +13,24 @@
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
-      <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
       <?php wp_head(); ?>
    </head>
    <!-- body -->
    <body class="main-layout">
 	<!-- header section start -->
-		<div class="container">
+		<div class="container" id="header">
 			<div class="row">
             <div class="col-md-12">
                <header>
-                  <div class="d-flex align-items-center">
+                  <div class="d-flex flex-column flex-md-column flex-md-column flex-lg-column flex-xl-row align-items-center">
                      <div class="logo mr-auto">
                         <a href=""><img src="<?php echo get_template_directory_uri().'/images/logo.png' ?>" alt=""></a>
                      </div>
-                     <div>
+                     <div class="d-block d-sm-block d-md-block d-lg-block d-xl-none">
+                        <a id="menu-button" href="javascript:void(0)"><img src="<?php echo get_template_directory_uri().'/images/menu.png' ?>" alt=""></a>
+                        <a id="menu-button-cancel" href="javascript:void(0)"><img src="<?php echo get_template_directory_uri().'/images/cancel.png' ?>" alt=""></a>
+                     </div>
+                     <div id="nav-collapse">
                         <nav>
                            <?php
                               wp_nav_menu( array( 

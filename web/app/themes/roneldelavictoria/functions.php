@@ -9,7 +9,7 @@
 	function roneldelavictoria_scripts() {
 	wp_enqueue_style( 'bootsrapcss', get_template_directory_uri().'/css/bootstrap.min.css' );
 	wp_enqueue_style( 'ronel-style', get_stylesheet_uri() );
-
+	
 	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/query.min.js', array(), '1.0.0',true);
 	wp_enqueue_script( 'popper', get_template_directory_uri() . '/js/popper.min.js', array(), '1.0.0',true);
 	wp_enqueue_script( 'bootstrapminjs', get_template_directory_uri() . '/js/bootstrap.bundle.min.js', array(), '1.0.0',true);

@@ -1,8 +1,10 @@
 /*
-Theme Name: TFE exam theme
+Theme Name: Rocket agency exam theme
 Author: Ronel D dela Victoria
 License: GNU General Public License v2 or later
 */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 body {
   font-family: "Work Sans";
 }
@@ -60,6 +62,19 @@ body .alignfull {
 
 body .wp-block-cover.has-background-dim:not([class*=-background-color]) {
   background-color: transparent;
+}
+
+body header #menu-button {
+  position: absolute;
+  right: 15px;
+  top: 30px;
+}
+
+body header #menu-button-cancel {
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  display: none;
 }
 
 body header nav {
@@ -153,6 +168,10 @@ body .why-lorem h2 {
   margin: 40px 0 50px 0;
 }
 
+body .why-lorem h2 span {
+  font-weight: 600;
+}
+
 body .why-lorem .reasons {
   margin-top: 75px;
 }
@@ -223,5 +242,32 @@ body footer p {
 
 body footer .bottom-footer {
   margin-top: 90px;
+}
+
+body .show-nav {
+  display: fixed !important;
+}
+
+@media (max-width: 1199.98px) {
+  body #header {
+    position: fixed;
+    top: 0;
+    background: #fff;
+    z-index: 2;
+  }
+  body header {
+    padding: 28px 0;
+  }
+  body header nav {
+    display: block;
+  }
+  body header nav ul li {
+    display: block;
+    padding: 15px 0 !important;
+  }
+  body #nav-collapse {
+    display: none;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

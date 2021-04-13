@@ -1,5 +1,5 @@
 /*
-Theme Name: TFE exam theme
+Theme Name: Rocket agency exam theme
 Author: Ronel D dela Victoria
 License: GNU General Public License v2 or later
 */
@@ -9,6 +9,8 @@ $textcolor:#0c0c0e;
 $textcolor-white:#fff;
 $font-primary:'Work Sans';
 $font-secondary:'Roboto';
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 body{
     font-family: $font-primary;
     p{
@@ -59,11 +61,21 @@ body{
         background-color: transparent;
     }
     header{
+        #menu-button{
+            position:absolute;
+            right: 15px;
+            top: 30px;
+        }
+        #menu-button-cancel{
+            position:absolute;
+            right: 15px;
+            top: 30px;
+            display: none;
+        }
         nav{
             display: flex;
             justify-content: center;
             align-items: center;
-            
             ul:first-child{
                 li:first-child{
                     padding-left: 0;
@@ -132,6 +144,9 @@ body{
             font-size: 60px;
             color: $textcolor !important;
             margin: 40px 0 50px 0;
+            span{
+                font-weight: 600;
+            }
         }
         .reasons{
             margin-top: 75px;
@@ -190,5 +205,36 @@ body{
         .bottom-footer{
             margin-top: 90px;
         }
+        
+    }
+    .show-nav{
+        display: fixed !important;
+    }
+    @media (max-width: 1199.98px) {
+        #header{
+            position: fixed;
+            top: 0;
+            background: #fff;
+            z-index: 2;
+        }
+        header{
+            padding: 28px 0;
+            nav{
+                display: block;
+                ul{
+                    li{
+                        display: block;
+                        padding: 15px 0 !important;
+                    }
+                }
+            }
+        }
+        #nav-collapse{
+            display: none;
+            width: 100%;
+            
+        }
+        
+       
     }
 }
